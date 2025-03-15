@@ -2,12 +2,6 @@
 
 ## Prerequisites
 
-### Java
-
-You need to have Java 21:
-
-- [JDK 21](https://openjdk.java.net/projects/jdk/21/)
-
 ### Node.js and NPM
 
 Before you can build this project, you must install and configure the following dependencies on your machine:
@@ -24,24 +18,15 @@ npm install
 
 ## Local environment
 
-- [Local server](http://localhost:8080)
 
 <!-- jhipster-needle-localEnvironment -->
 
 ## Start up
-
-```bash
-./mvnw
-```
 
 
 <!-- jhipster-needle-startupCommand -->
 
 ## Documentation
 
-- [Package types](documentation/package-types.md)
-- [Assertions](documentation/assertions.md)
-- [Logs Spy](documentation/logs-spy.md)
-- [CORS configuration](documentation/cors-configuration.md)
 
 <!-- jhipster-needle-documentation -->
