@@ -1,0 +1,11 @@
+<mat-toolbar color="primary">
+    <span>{{ appName() }}</span>
+    <span class="toolbar-spacer"></span>
+    <mat-slide-toggle (change)="toggleTheme()" [checked]="isDarkMode">
+      <mat-icon *ngIf="isDarkMode">dark_mode</mat-icon>
+    </mat-slide-toggle>
+    <span class="space-separator" id="menu-space-separator"></span>
+    <button mat-flat-button (click)="toggleLogin()">
+      {{ isAuthenticated() ? 'Logout' : 'Login' }}
+    </button>
+  </mat-toolbar>
