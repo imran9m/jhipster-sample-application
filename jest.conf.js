@@ -20,6 +20,15 @@ module.exports = {
   modulePaths: [`<rootDir>/${baseUrl}`],
   cacheDirectory: '<rootDir>/target/jest-cache',
   coverageDirectory: '<rootDir>/target/test-results/',
+  collectCoverageFrom: [
+    'src/main/webapp/app/**/*.{ts,js}',
+    '!src/main/webapp/app/**/*.spec.{ts,js}',
+    '!src/main/webapp/app/**/index.ts',
+    '!src/main/webapp/environments/**',
+    '!src/main/webapp/main.ts',
+    '!src/main/webapp/test.ts'
+  ],
+  coverageReporters: ['html', 'text-summary', 'lcov', 'clover'],
   coverageThreshold: {
     global: {
       statements: 100,
